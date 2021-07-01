@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 JS - Todo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive stiliaus failai visada zemiau stiliaus -->
+    <link rel="stylesheet" href="desktopFirst.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+    <div class="app-container d-flex align-items-center flex-column">
+        <h3>Todo List</h3>
+        <div class="d-flex align-items-center mb-3 insert">
+            <div class="form-group mr-3 mb-0 fillin">
+                <input type="text" class="form-control" id="task" placeholder="Enter a task" />
+            </div>
+            <button type="button" class="btn btn-primary mr-3 add">
+                Add
+            </button>
+        </div>
+        <div>
+            <p class="error"></p>
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center heads">
+            <div class="col-6 todo-wrap">
+                <h3>TODO</h3>
+                <hr>
+                <!-- <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Uzduotis</h5>
+                    </div>
+                    <div class="d-flex card-body">
+                        <button type="button" class="btn btn-danger todelete">Delete</button>
+                        <button type="button" class="btn btn-success todone">Move to Done</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Uzduotis</h5>
+                    </div>
+                    <div class="d-flex card-body">
+                        <button type="button" class="btn btn-danger todelete">Delete</button>
+                        <button type="button" class="btn btn-success todone">Move to Done</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="col-6 done-wrap">
+                <h3>DONE</h3>
+                <hr>
+                <!-- <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Uzduotis</h5>
+                    </div>
+                    <div class="d-flex card-body">
+                        <button type="button" class="btn btn-danger todelete">Delete</button>
+                        <button type="button" class="btn btn-success todone">Move to Done</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- MODAL START -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Edit task</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="taskEdit" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary taskSave" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL END -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+
+</html>
